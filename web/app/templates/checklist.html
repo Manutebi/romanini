@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="row">
+<div class="col-12 col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="h2">Check-list</h1>
+            <hr>
+            <a href="{% url 'crear_check' %}" type="button" class="btn btn-success">Crear</a>
+            <h2 class="h2">ó</h2>
+            <a href="{% url 'listar_check' %}" type="button" class="btn btn-primary">Listar</a>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

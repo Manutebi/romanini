@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+
+<div class="col-12 col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="h2">Crear Alerta</h1>
+            <hr>
+            <form action=""  method="POST">
+                {% csrf_token %}
+                <div class="row" style="height: 500px;">
+                    {{ alerta }}
+                </div>
+                <hr>
+                <div style="float: right;">
+                    {{ mensaje }}
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                    <a class="btn btn-danger" href="{% url 'alertas' %}">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

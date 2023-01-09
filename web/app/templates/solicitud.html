@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="col-12 col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="h2">Solicitud</h1>
+            <hr>
+            <a href="{% url 'crear_solicitud' %}" type="" class="btn btn-success">Crear</a>
+            <h2 class="h2">ó</h2>
+            <a href="{% url 'listar_solicitud' %}" type="button" class="btn btn-primary">Listar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

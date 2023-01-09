@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="row">
+<div class="col-12 col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="h2">Crear Orden de Trabajo</h1>
+            <hr>
+
+            <hr>
+            <div>
+                <button class="btn btn-success">Guardar</button><a class="btn btn-danger" href="{% url 'solicitud' %}">Cancelar</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
