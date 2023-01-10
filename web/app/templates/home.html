@@ -2,4 +2,118 @@
 {% load static %}
 {% block contenido %}
 
+<link rel="stylesheet" href="{% static 'footer.css' %}">
+
+<div class="swiffy-slider">
+  <ul class="slider-container">
+      <li><img src="https://www.romaninibus.cl/wp-content/uploads/2020/02/29-2.jpg" style="height:850px; width: 1950px;"></li>
+      <li><img src="https://live.staticflickr.com/6176/6192466701_3e700f6eab_b.jpg" style="height:850px; width: 1950px;"></li>
+      <li><img src="https://www.romaninibus.cl/wp-content/uploads/2020/02/29-1.jpg" style="height:850px; width: 1950px;"></li>
+  </ul>
+
+  <button type="button" class="slider-nav"></button>
+  <button type="button" class="slider-nav slider-nav-next"></button>
+
+  <div class="slider-indicators">
+      <button class="active"></button>
+      <button></button>
+      <button></button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  	<!-- ==============================================
+		CONTACT
+		=============================================== -->
+		<section id="contact" class="add-padding border-top-color2">
+		
+			<div class="container text-center">
+				
+				<div class="row">
+				
+					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+					
+						<h1 class="big-text">Contactanos</h1>
+						
+						<p class="lead">Software Engineer. Lawyer.<br>Experienced Manager. Entrepreneur.</p>
+
+						<p>Sinatra, Ruby on Rails, JavaScript, Node.js, Express.js, Backbone.js, Handlebars.js, jQuery, AJAX, Tu mama es weona, CSS3, SASS, SQL, APIs, Git, GitHub/Bitbucket, WordPress, Heroku, Responsive/Mobile Development.
+
+						<p></p>
+
+						<p>Para mas información, <a href="" target="_blank">Siguenos en nuestras redes sociales.</a></p>
+					
+					</div>
+				
+					<!--=== Contact Form ===-->
+
+					<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-name">Name</label>
+						  <div class="controls">
+							<input id="contact-name" name="contactName" placeholder="Nombre" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+							<i class="fa fa-user"></i>
+						  </div>
+						</div><!-- End name input -->
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-mail">Email</label>
+						  <div class=" controls">
+							<input id="contact-mail" name="email" placeholder="Email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+							<i class="fa fa-envelope"></i>
+						  </div>
+						</div><!-- End email input -->
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-message">Message</label>
+							<div class="controls">
+								<textarea id="contact-message" name="comments"  placeholder="Mensaje" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
+								<i class="fa fa-comment"></i>
+							</div>
+						</div><!-- End textarea -->
+						
+						<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Enviar mensaje</button></p>
+						<input type="hidden" name="submitted" id="submitted" value="true" />
+						
+					</form><!-- End contact-form -->
+					
+				</div>
+				
+			</div>
+		
+		</section>
+		
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->	
+		
+		<footer id="main-footer" class="add-padding border-top-color2">
+		
+			<div class="container">
+
+				<p><a href="#" target="_blank">Redes sociales</a></p><br>
+			
+				<ul class="social-links text-center">
+					<li><a href="" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+					<li><a href="" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a></li>
+					<li><a href="" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+				</ul>
+			
+				<p class="text-center">&copy; 2023 - Vicente Navarro</p>
+			
+			</div>
+			
+		</footer>
+
+   
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 {% endblock %}
+

@@ -22,6 +22,9 @@ def alertas(request):
 def solicitud(request):
     return render(request, 'solicitud.html')
 
+def login(request):
+    return render(request, 'login.html')
+
 ####################################################################
 ################   CREACION Y LISTADOS #############################
 ####################################################################

@@ -15,4 +15,5 @@ urlpatterns = [
     path('listar_solicitud/', listar_solicitud, name="listar_solicitud"),
     path('crear_ot/', crear_ot, name="crear_ot"),
     path('listar_ot/', listar_ot, name="listar_ot"),
+    path('login/', login, name="login")
 ]
